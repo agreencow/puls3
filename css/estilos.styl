@@ -1,2 +1,56 @@
+
+amarillo = #FFBE2C
+azul = #22BCE0
+naranja = #DD4F24
+verde = #22BC68
+
+@import fuentes.styl
+
+border-radius()
+	-webkit-border-radius arguments
+	-moz-border-radius arguments
+	border-radius arguments
+
 body
-    background-color gray
+	background-color #fefefe
+	font-size 16px
+h1, h2, ul 
+	padding 0
+	margin 0
+img
+	width 100%
+header
+	background-color #444
+	border-bottom 3px solid #2d2d2d
+	overflow	hidden
+	padding 10px
+	text-align center
+
+	#header_logo, #header_titulo, #header_user
+		display inline-block
+		vertical-align middle
+	#header_logo, #header_user
+		height	h = 74px
+		width 74px
+	#header_logo
+		float left
+	#header_user
+		border #2d2d2d solid 3px
+		border-radius (40px)
+		float right
+		overflow hidden
+	#header_titulo
+		width 50%
+		a
+			color azul
+			text-decoration none
+		a:hover
+			color naranja
+		h2
+			color white
+			font-weight bold
+		li
+			display inline
+			margin 0 0.4em 0 0
+
+

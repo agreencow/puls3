@@ -14,7 +14,7 @@ border-radius()
 body
 	background-color #efefef
 	font-size 16px
-h1, h2, ul, p 
+h1, h2, h3, ul, p 
 	padding 0
 	margin 0
 img
@@ -60,7 +60,43 @@ header
 
 #contenido
 	overflow hidden
-	padding 0 0 0 1.7%
+	padding 100px 0 0 2.3%
+
+	aside
+		background-color azul
+		border-radius (0px 0px 5px 5px)
+		height 48px
+		margin 0 2% 0 0
+		overflow hidden
+		transition:height 0.3s ease;
+		-webkit-transition:height 0.3s ease;
+
+		#aside_header
+			border-bottom 3px solid #84E0EF
+			height 35px
+			padding 10px 0 0 0
+			width 100%
+			*
+				display inline-block
+				vertical-align middle
+			span
+				font-size 2em
+				color #84E0EF
+			h3
+				color white
+				float right
+				font-weight normal
+				margin-right 10px
+
+		#aside_body
+			p
+				color white
+				font-size 0.9em
+				font-style italic
+				line-height 1.5em
+				margin 2% 5%
+	aside:hover
+		height 210px
 
 	.contenido_item
 		background-color white
@@ -83,6 +119,7 @@ header
 			height 140px
 			overflow hidden
 			h2
+				font-size 1.4em
 				color #444
 				font-weight bold
 				font-style italic
@@ -123,7 +160,7 @@ header
 					vertical-align middle
 				a
 					text-decoration none
-					font-size 1.8em
+					font-size 1.7em
 
 					.icon-arrow-up
 						color verde

@@ -1,5 +1,5 @@
 
-amarillo = #FFBE2C
+rosa = #FF5AA5
 azul = #22BCE0
 naranja = #DD4F24
 verde = #22BC68
@@ -12,9 +12,9 @@ border-radius()
 	border-radius arguments
 
 body
-	background-color #fefefe
+	background-color #efefef
 	font-size 16px
-h1, h2, ul 
+h1, h2, ul, p 
 	padding 0
 	margin 0
 img
@@ -52,5 +52,81 @@ header
 		li
 			display inline
 			margin 0 0.4em 0 0
+
+#contenido
+	padding 10px
+
+	.contenido_item
+		background-color white
+		border-right 4px solid azul
+		height 175px
+		margin 10px 10px 0 0
+		overflow hidden
+		width 100%
+
+		figure
+			float left
+			height 175px
+			margin 0 2em 0 0
+			width 155px
+		.item_info
+			height 140px
+			overflow hidden
+			h2
+				color #444
+				font-weight bold
+				font-style italic
+				margin 25px 0 0 0
+			.item_posted
+				color #7a7a7a
+				margin 0.2em 0
+				a
+					color naranja
+					text-decoration none
+				a:hover
+					color azul
+			.icon-heart-2
+				color #a5a5a5
+				cursor pointer
+				font-size 1.2em
+			.icon-heart-2:hover
+					color rosa
+
+		.item_extra
+			width 100%
+			.extra_tag
+				background-color azul
+				border-radius (3px)
+				color white
+				float left
+				padding 0.1em 0.3em
+			.extra_likes
+				float right
+				margin 0 20px 0 0
+				position relative
+				top -6px
+				
+				*
+					display inline
+					vertical-align middle
+				a
+					text-decoration none
+					font-size 1.8em
+
+					.icon-arrow-up
+						color verde
+						position relative
+					.icon-arrow-up:hover
+						top -3px
+					.icon-arrow-down
+						color naranja
+						position relative
+					.icon-arrow-down:hover
+						top 3px
+				.likes_numero
+					color #a5a5a5
+
+
+
 
 

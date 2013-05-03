@@ -13,7 +13,8 @@ border-radius()
 
 body
 	background-color #efefef
-	font-size 16px
+	font-size 15px
+	min-width 320px
 h1, h2, h3, ul, p 
 	padding 0
 	margin 0
@@ -26,6 +27,7 @@ header
 	padding 10px 0
 	position fixed
 	width 100%
+	min-width 320px
 	text-align center
 	z-index:2
 
@@ -33,8 +35,8 @@ header
 		display inline-block
 		vertical-align middle
 	#header_logo, #header_user
-		height	h = 74px
-		width 74px
+		height 55px
+		width 55px
 	#header_logo
 		float left
 		margin-left 20px
@@ -54,6 +56,7 @@ header
 		h2
 			color white
 			font-weight bold
+			font-size 1.1em
 		li
 			display inline
 			margin 0 0.4em 0 0
@@ -95,7 +98,7 @@ header
 				font-style italic
 				line-height 1.5em
 				margin 2% 5%
-	aside:hover
+	aside:hover, aside:active
 		height 210px
 
 	.contenido_item
@@ -113,13 +116,13 @@ header
 		figure
 			float left
 			height 175px
-			margin 0 2em 0 0
+			margin 0 0.2em 0 0
 			width 155px
 		.item_info
 			height 140px
 			overflow hidden
 			h2
-				font-size 1.4em
+				font-size 1.3em
 				color #444
 				font-weight bold
 				font-style italic
@@ -148,10 +151,11 @@ header
 				border-radius (3px)
 				color white
 				float left
+				font-size 0.9em
 				padding 0.1em 0.3em
 			.extra_likes
 				float right
-				margin 0 20px 0 0
+				margin 0 5px 0 0
 				position relative
 				top -6px
 				
@@ -160,7 +164,7 @@ header
 					vertical-align middle
 				a
 					text-decoration none
-					font-size 1.7em
+					font-size 1.5em
 
 					.icon-arrow-up
 						color verde
